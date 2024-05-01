@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ExchangeCurrencyRate</string>
+    <string-array name="countries_array">
+        <item>Country 1</item>
+        <item>Country 2</item>
+        <!-- Add more countries as needed -->
+    </string-array>
+</resources>
