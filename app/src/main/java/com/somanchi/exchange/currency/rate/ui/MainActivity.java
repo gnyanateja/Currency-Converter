@@ -33,11 +33,13 @@ public class MainActivity extends AppCompatActivity {
             viewModel.invertSelection();
         });
        binding.btnConvert.setOnClickListener(v -> {
-           KeyboardUtils.hideKeyboard(this);
-           binding.btnConvert.setVisibility(View.GONE);
-           binding.pgSubmit.setVisibility(View.VISIBLE);
-           viewModel.getCurrencyFromCountry().setValue(Long.valueOf(binding.edFromCurrency.getEditText().getText().toString()));
-           viewModel.fetchExchangeRate();
+           try{
+               KeyboardUtils.hideKeyboard(this);
+               binding.btnConvert.setVisibility(View.GONE);
+               binding.pgSubmit.setVisibility(View.VISIBLE);
+               viewModel.getCurrencyFromCountry().setValue(Long.valueOf(binding.edFromCurrency.getEditText().getText().toString()));
+               viewModel.fetchExchangeRate();
+           } catch (Exception ex){}
        });
        viewModel.fetchUsageInfo();
     }

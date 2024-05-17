@@ -11,14 +11,14 @@ android {
         applicationId "com.somanchi.exchange.currency.rate"
         minSdk 24
         targetSdk 34
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary true
         }
-        buildConfigField "String", "API_KEY", '"--Your API KEY"'
+        buildConfigField "String", "API_KEY", '"86a381d7be3047c182429b8eebde39cd"'
     }
 
     buildFeatures {
